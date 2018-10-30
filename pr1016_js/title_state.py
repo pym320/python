@@ -1,5 +1,6 @@
 from pico2d import *
 import game_framework
+import main_state
 import boys_state
 
 def enter():
@@ -28,7 +29,7 @@ def handle_events():
 				game_framework.quit()
 				# game_framework.pop_state()
 			elif e.key == SDLK_SPACE:
-				game_framework.push_state(boys_state)
+				game_framework.push_state(main_state)
 
 def pause():
 	pass
